@@ -1600,7 +1600,7 @@ public:
 
     /************************************/
 
-    void write_nhx_tree(string path, string suffix, bool overwrite=true) const throw (Exception)
+    void write_nhx_tree(string path, string suffix, bool overwrite=true) const
     {
         ofstream output( (path+"."+suffix).c_str(), overwrite ? (ios::out) : (ios::out|ios::app));
 
